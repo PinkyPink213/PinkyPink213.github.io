@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
-$navbg: #252A34;
+$navbg: black;
 $navlink1: #EAEAEA;
 $navlink2: #FFE2E2;
 $navlinkhover: #FFA1CF;
 $primary:#FFE2E2;
 $secondary: #F6F6F6;
-$btn:#FF9999;
-$btntext: #3E4149;
-$btnhover:#FFC8C8;
-$text:#252A34;
+$btn:black;
+$btntext: white;
+$btnhover:black;
+$text:black;
 
 // Global
 body {
@@ -22,6 +22,20 @@ body {
 
 section {
     padding: 5%;
+}
+.btn.btn-primary {
+    background: $btn;
+    color: $btntext;
+    border: none;
+    margin: 5px 10px;
+    padding: 10px 30px;
+    &:hover,&:focus,&:active {
+        -webkit-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s;
+        background: #FF2E63;
+        color:$btnhover;
+    }
 }
 
 // Navbar
@@ -53,12 +67,18 @@ section {
 // Section1: About Me
 section.about-me {
     background-color: #FEF2F4;
+    color: $text;
     font-family: 'Oswald', sans-serif;
+    .row {
+        // width: 100vw;
+        height: 70vh;
+    }
     .pink-profile {
         height: 300px;
         width: 300px;
         object-fit: cover;
         object-position: center -180px;
+        margin-bottom: 20px
     }
     h1{
         font-size: 48px;
@@ -68,3 +88,4 @@ section.about-me {
         font-size: 36px;
     }
 }
+

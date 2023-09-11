@@ -11,8 +11,21 @@ section {
   padding: 5%;
 }
 
+.btn.btn-primary {
+  background: black;
+  color: white;
+  border: none;
+  margin: 5px 10px;
+  padding: 10px 30px;
+}
+.btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active {
+  transition: all 0.3s;
+  background: #FF2E63;
+  color: black;
+}
+
 .navbar-dark.navbar {
-  background-color: #252A34;
+  background-color: black;
   text-transform: uppercase;
 }
 .navbar-dark.navbar .navbar-toggler {
@@ -35,7 +48,11 @@ section {
 
 section.about-me {
   background-color: #FEF2F4;
+  color: black;
   font-family: "Oswald", sans-serif;
+}
+section.about-me .row {
+  height: 70vh;
 }
 section.about-me .pink-profile {
   height: 300px;
@@ -44,6 +61,7 @@ section.about-me .pink-profile {
      object-fit: cover;
   -o-object-position: center -180px;
      object-position: center -180px;
+  margin-bottom: 20px;
 }
 section.about-me h1 {
   font-size: 48px;
