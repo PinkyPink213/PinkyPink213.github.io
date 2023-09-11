@@ -19,6 +19,7 @@ body .row {
   font-weight: lighter;
   font-size: 20px;
   color: #EAEAEA;
+  padding: 0px 0.6em !important;
 }
 .navbar a.nav-link:hover, .navbar a.nav-link:focus, .navbar a.nav-link:active {
   transition: all 0.3s;

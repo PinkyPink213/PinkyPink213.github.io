@@ -30,6 +30,7 @@ body {
         font-weight: lighter;
         font-size: 20px;
         color: $navlink1;
+        padding: 0px 0.6em !important;
         &:hover,&:focus,&:active {
             -webkit-transition: all .3s;
             -o-transition: all .3s;
