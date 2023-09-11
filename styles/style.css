@@ -1,3 +1,26 @@
-.row {
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+body .row {
   width: 100%;
+}
+
+.navbar {
+  background-color: #252A34;
+  text-transform: uppercase;
+}
+.navbar img.header-logo {
+  max-width: 100px;
+  height: 100%;
+}
+.navbar a.nav-link {
+  font-weight: lighter;
+  font-size: 20px;
+  color: #EAEAEA;
+}
+.navbar a.nav-link:hover, .navbar a.nav-link:focus, .navbar a.nav-link:active {
+  transition: all 0.3s;
+  color: #FFA1CF;
 }/*# sourceMappingURL=style.css.map */

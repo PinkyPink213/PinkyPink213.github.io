@@ -1,3 +1,41 @@
-.row {
-    width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+$navbg: #252A34;
+$navlink1: #EAEAEA;
+$navlink2: #FFE2E2;
+$navlinkhover: #FFA1CF;
+$primary:#FFE2E2;
+$secondary: #F6F6F6;
+$btn:#FF9999;
+$btntext: #3E4149;
+$btnhover:#FFC8C8;
+$text:#252A34;
+
+body {
+    // font-family: 'Oswald', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+    .row {
+        width: 100%;
+    }
+}
+
+.navbar {
+    background-color: $navbg;
+    text-transform: uppercase;
+    img.header-logo {
+        max-width: 100px;
+        height: 100%;
+    }
+    a.nav-link {
+        font-weight: lighter;
+        font-size: 20px;
+        color: $navlink1;
+        &:hover,&:focus,&:active {
+            -webkit-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s;
+            color: $navlinkhover;
+        }
+    }
+    
 }
