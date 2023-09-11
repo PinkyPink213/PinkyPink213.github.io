@@ -84,13 +84,6 @@ section.hero-sec {
     //     // width: 100vw;
     //     height: 70vh;
     // }
-    .pink-profile {
-        height: 300px;
-        width: 300px;
-        object-fit: cover;
-        object-position: center -180px;
-        margin-bottom: 20px
-    }
     h1{
         font-size: 72px;
     }
@@ -99,6 +92,14 @@ section.hero-sec {
         font-size: 48px;
     }
 
-   
+}
+
+// section 2
+.pink-profile {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    object-position: center -180px;
+    // margin-bottom: 20px
 }
 

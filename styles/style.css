@@ -56,19 +56,19 @@ section.hero-sec {
   align-items: center;
   justify-content: center;
 }
-section.hero-sec .pink-profile {
-  height: 300px;
-  width: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center -180px;
-     object-position: center -180px;
-  margin-bottom: 20px;
-}
 section.hero-sec h1 {
   font-size: 72px;
 }
 section.hero-sec h2 {
   font-weight: 300;
   font-size: 48px;
+}
+
+.pink-profile {
+  height: 400px;
+  width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center -180px;
+     object-position: center -180px;
 }/*# sourceMappingURL=style.css.map */
