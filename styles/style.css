@@ -50,9 +50,11 @@ section.about-me {
   background-color: #FEF2F4;
   color: black;
   font-family: "Oswald", sans-serif;
-}
-section.about-me .row {
-  height: 70vh;
+  min-height: 90vh;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 section.about-me .pink-profile {
   height: 300px;
@@ -64,9 +66,9 @@ section.about-me .pink-profile {
   margin-bottom: 20px;
 }
 section.about-me h1 {
-  font-size: 48px;
+  font-size: 72px;
 }
 section.about-me h2 {
   font-weight: 300;
-  font-size: 36px;
+  font-size: 48px;
 }/*# sourceMappingURL=style.css.map */

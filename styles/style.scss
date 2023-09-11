@@ -69,10 +69,21 @@ section.about-me {
     background-color: #FEF2F4;
     color: $text;
     font-family: 'Oswald', sans-serif;
-    .row {
-        // width: 100vw;
-        height: 70vh;
-    }
+    min-height: 90vh;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    // .row {
+    //     // width: 100vw;
+    //     height: 70vh;
+    // }
     .pink-profile {
         height: 300px;
         width: 300px;
@@ -81,11 +92,13 @@ section.about-me {
         margin-bottom: 20px
     }
     h1{
-        font-size: 48px;
+        font-size: 72px;
     }
     h2 {
         font-weight: 300;
-        font-size: 36px;
+        font-size: 48px;
     }
+
+   
 }
 
