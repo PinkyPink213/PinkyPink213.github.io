@@ -19,9 +19,12 @@ body {
     }
 }
 
-.navbar {
+.navbar-dark.navbar {
     background-color: $navbg;
     text-transform: uppercase;
+    .navbar-toggler {
+        color: none;
+    }
     img.header-logo {
         max-width: 100px;
         height: 100%;
