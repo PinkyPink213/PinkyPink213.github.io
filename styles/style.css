@@ -46,7 +46,7 @@ section {
   color: #FFA1CF;
 }
 
-section.about-me {
+section.hero-sec {
   background-color: #FEF2F4;
   color: black;
   font-family: "Oswald", sans-serif;
@@ -56,7 +56,7 @@ section.about-me {
   align-items: center;
   justify-content: center;
 }
-section.about-me .pink-profile {
+section.hero-sec .pink-profile {
   height: 300px;
   width: 300px;
   -o-object-fit: cover;
@@ -65,10 +65,10 @@ section.about-me .pink-profile {
      object-position: center -180px;
   margin-bottom: 20px;
 }
-section.about-me h1 {
+section.hero-sec h1 {
   font-size: 72px;
 }
-section.about-me h2 {
+section.hero-sec h2 {
   font-weight: 300;
   font-size: 48px;
 }/*# sourceMappingURL=style.css.map */
