@@ -7,6 +7,10 @@ body .row {
   width: 100%;
 }
 
+section {
+  padding: 5%;
+}
+
 .navbar-dark.navbar {
   background-color: #252A34;
   text-transform: uppercase;
@@ -19,7 +23,7 @@ body .row {
   height: 100%;
 }
 .navbar-dark.navbar a.nav-link {
-  font-weight: lighter;
+  font-weight: 300;
   font-size: 20px;
   color: #EAEAEA;
   padding: 0px 0.6em !important;
@@ -27,4 +31,24 @@ body .row {
 .navbar-dark.navbar a.nav-link:hover, .navbar-dark.navbar a.nav-link:focus, .navbar-dark.navbar a.nav-link:active {
   transition: all 0.3s;
   color: #FFA1CF;
+}
+
+section.about-me {
+  background-color: #FEF2F4;
+  font-family: "Oswald", sans-serif;
+}
+section.about-me .pink-profile {
+  height: 300px;
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center -180px;
+     object-position: center -180px;
+}
+section.about-me h1 {
+  font-size: 48px;
+}
+section.about-me h2 {
+  font-weight: 300;
+  font-size: 38px;
 }/*# sourceMappingURL=style.css.map */
