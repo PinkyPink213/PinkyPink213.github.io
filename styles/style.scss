@@ -349,7 +349,9 @@ section.contact {
             min-width: 100%;
             width: 100%;
         }
+        
     }
+
 
 }
 
@@ -367,6 +369,17 @@ section.contact {
 
         h2 {
             font-size: 36px;
+        }
+    }
+    section.contact {
+        .card {
+            min-width: 40px;
+            a {
+                font-size: 16px;
+            }
+            i {
+                font-size: 20px;
+            }
         }
     }
 }

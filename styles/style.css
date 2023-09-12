@@ -275,4 +275,13 @@ section.contact .card i {
   section.hero-sec h2 {
     font-size: 36px;
   }
+  section.contact .card {
+    min-width: 40px;
+  }
+  section.contact .card a {
+    font-size: 16px;
+  }
+  section.contact .card i {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
