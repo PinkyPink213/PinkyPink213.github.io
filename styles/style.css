@@ -146,16 +146,35 @@ section.about-me .badge-dark {
   left: 0px;
 }
 
-.bottom-footer {
-  background: black;
-  color: #FFD6EC;
-}
-
 @keyframes beat {
   to {
     transform: scale(1.2) rotate(-15deg);
   }
 }
+section.contact .card {
+  border-radius: 20px;
+  margin: 20px;
+  background-color: #FEF2F4;
+  border-color: #FFA1CF;
+  min-width: 400px;
+  margin-bottom: 10vh;
+}
+section.contact .card p {
+  font-size: 20px;
+}
+section.contact .card i {
+  font-size: 28px;
+  background: #FFD6EC;
+  border-radius: 50px;
+  padding: 5px;
+  min-width: 50px;
+}
+
+.bottom-footer {
+  background: black;
+  color: #FFD6EC;
+}
+
 @media (max-width: 991px) {
   .navbar-dark.navbar a.nav-link {
     font-size: 18px;
@@ -193,6 +212,10 @@ section.about-me .badge-dark {
   }
   .navbar-dark.navbar a.nav-link {
     padding: 5px 10px !important;
+  }
+  section.contact .card {
+    min-width: 100%;
+    width: 100%;
   }
 }
 @media (max-width: 480px) {
