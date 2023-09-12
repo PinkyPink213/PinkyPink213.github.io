@@ -359,7 +359,14 @@ section.contact {
     .heart {
         display: none;
     }
-
+    body{
+        h2 {
+            font-size: 36px;
+        }
+        .sub-title{
+            font-size: 18px;
+        }
+    } 
     section.hero-sec {
         min-height: 90vh;
 

@@ -266,6 +266,12 @@ section.contact .card i {
   .heart {
     display: none;
   }
+  body h2 {
+    font-size: 36px;
+  }
+  body .sub-title {
+    font-size: 18px;
+  }
   section.hero-sec {
     min-height: 90vh;
   }
