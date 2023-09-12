@@ -34,9 +34,10 @@ section {
     background: $btn;
     color: $btntext;
     border: none;
-    margin: 5px 10px;
+    margin: 8px 10px;
     padding: 10px 30px;
-
+    max-width: 150px;
+    width: 100%;
     &:hover,
     &:focus,
     &:active {
@@ -195,7 +196,11 @@ section.about-me {
     left: 0px;
 }
 
-
+// Footer
+.bottom-footer {
+    background: black;
+    color: $primary;
+}
 
 @keyframes beat {
     to {

@@ -19,8 +19,10 @@ section {
   background: black;
   color: white;
   border: none;
-  margin: 5px 10px;
+  margin: 8px 10px;
   padding: 10px 30px;
+  max-width: 150px;
+  width: 100%;
 }
 .btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active {
   transition: all 0.3s;
@@ -142,6 +144,11 @@ section.about-me .badge-dark {
   height: 50px;
   top: -25px;
   left: 0px;
+}
+
+.bottom-footer {
+  background: black;
+  color: #FFD6EC;
 }
 
 @keyframes beat {
