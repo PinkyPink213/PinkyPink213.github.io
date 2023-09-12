@@ -16,9 +16,11 @@ $text:black;
 body {
     // font-family: 'Oswald', sans-serif;
     font-family: 'Fira Sans', sans-serif;
+
     .row {
         width: 100%;
     }
+
     h2 {
         font-size: 40px;
     }
@@ -27,18 +29,22 @@ body {
 section {
     padding: 5%;
 }
+
 .btn.btn-primary {
     background: $btn;
     color: $btntext;
     border: none;
     margin: 5px 10px;
     padding: 10px 30px;
-    &:hover,&:focus,&:active {
+
+    &:hover,
+    &:focus,
+    &:active {
         -webkit-transition: all .3s;
-            -o-transition: all .3s;
-            transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
         background: #FF2E63;
-        color:$btnhover;
+        color: $btnhover;
     }
 }
 
@@ -46,24 +52,28 @@ section {
 .navbar-dark.navbar {
     background-color: $navbg;
     text-transform: uppercase;
-   
+
     img.header-logo {
         max-width: 100px;
         height: 100%;
     }
+
     a.nav-link {
         font-weight: 300;
         font-size: 20px;
         color: $navlink1;
         padding: 0px 0.6em !important;
-        &:hover,&:focus,&:active {
+
+        &:hover,
+        &:focus,
+        &:active {
             -webkit-transition: all .3s;
             -o-transition: all .3s;
             transition: all .3s;
             color: $navlinkhover;
         }
     }
-    
+
 }
 
 // Section1
@@ -77,23 +87,27 @@ section.hero-sec {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     --size: 50px;
     --p: 25px;
-    --R: 55.9px /*sqrt(var(--size)*var(--size) + var(--p)*var(--p))*/;
-    
+    --R: 55.9px
+        /*sqrt(var(--size)*var(--size) + var(--p)*var(--p))*/
+    ;
+
     height: 200px;
-    
+
     -webkit-mask:
-        radial-gradient(var(--R) at 50% calc(100% - (var(--size) + var(--p))),blue 99%,#0000 101%) calc(50% - 2*var(--size)) 0/calc(4*var(--size)) 100%,
-        radial-gradient(var(--R) at 50% calc(100% + var(--p)),#0000 99%,red 101%) 50% calc(100% - var(--size))/calc(4*var(--size)) 100% repeat-x;
-    h1{
+        radial-gradient(var(--R) at 50% calc(100% - (var(--size) + var(--p))), blue 99%, #0000 101%) calc(50% - 2*var(--size)) 0/calc(4*var(--size)) 100%,
+        radial-gradient(var(--R) at 50% calc(100% + var(--p)), #0000 99%, red 101%) 50% calc(100% - var(--size))/calc(4*var(--size)) 100% repeat-x;
+
+    h1 {
         font-size: 72px;
     }
+
     h2 {
         font-weight: 300;
         font-size: 48px;
@@ -107,16 +121,18 @@ section.about-me {
         max-height: 400px;
         max-width: 350px;
         width: 100%;
-        height:100%;    
+        height: 100%;
         object-fit: cover;
         object-position: center -180px;
         border-radius: 20px;
         margin: 20px;
     }
+
     i {
         font-size: 40px;
     }
-    .card{
+
+    .card {
         border: none;
         max-width: 350px;
         max-height: 400px;
@@ -125,20 +141,23 @@ section.about-me {
         height: 100%;
         background-color: $primary;
     }
-   
+
     .card-body a {
         color: #FF2E63;
         text-decoration: none;
     }
+
     i.bi.bi-box-arrow-up-right {
         font-size: 16px;
     }
+
     .badge-dark {
         background: black;
         margin: 2px;
         padding: 3px 6px;
     }
-}  
+}
+
 // heart
 .heart {
     position: absolute;
@@ -152,8 +171,9 @@ section.about-me {
     width: 50px;
     transform: rotate(-15deg);
     animation: beat .3s infinite alternate;
-  }
-  .heart:after {
+}
+
+.heart:after {
     background-color: #FF74B1;
     content: "";
     border-radius: 50%;
@@ -162,8 +182,9 @@ section.about-me {
     height: 50px;
     top: 0px;
     left: 25px;
-  }
-  .heart:before {
+}
+
+.heart:before {
     background-color: #FF74B1;
     content: "";
     border-radius: 50%;
@@ -172,72 +193,89 @@ section.about-me {
     height: 50px;
     top: -25px;
     left: 0px;
-  }
+}
 
 
-    @keyframes beat{
-        to { transform: scale(1.2) rotate(-15deg); }
+
+@keyframes beat {
+    to {
+        transform: scale(1.2) rotate(-15deg);
     }
-  
+}
+
 // Media Query
-@media  (max-width: 991px) {
+@media (max-width: 991px) {
     .navbar-dark.navbar a.nav-link {
         font-size: 18px;
     }
 }
 
-@media  (max-width: 767px) {
-    .heart,.heart:before,.heart:after {
+@media (max-width: 767px) {
+
+    .heart,
+    .heart:before,
+    .heart:after {
         height: 40px;
         width: 40px;
     }
-    .heart{
+
+    .heart {
         left: 425px;
     }
+
     .navbar-dark .navbar-toggler-icon::before {
         font-family: 'Bootstrap-icons';
         content: '\F479';
         font-size: 30px;
         color: white;
     }
-    .navbar-dark .navbar-toggler-icon{
-        &:hover::before,&:focus::before,&:active::before{
+
+    .navbar-dark .navbar-toggler-icon {
+
+        &:hover::before,
+        &:focus::before,
+        &:active::before {
             -webkit-transition: all .3s;
             -o-transition: all .3s;
             transition: all .3s;
             color: $navlinkhover;
         }
     }
+
     .navbar-dark .navbar-toggler {
         color: transparent;
         border-color: white;
     }
+
     .navbar-dark .navbar-toggler-icon {
         background-image: none;
     }
+
     .navbar-nav {
         padding: 5px 0;
     }
+
     .navbar-dark.navbar a.nav-link {
         padding: 5px 10px !important;
-        
+
     }
-    
+
 }
-@media  (max-width: 480px) {
+
+@media (max-width: 480px) {
     .heart {
         display: none;
     }
-    section.hero-sec{
+
+    section.hero-sec {
         min-height: 90vh;
+
         h1 {
             font-size: 50px;
         }
+
         h2 {
             font-size: 36px;
         }
-    } 
+    }
 }
-
-
-

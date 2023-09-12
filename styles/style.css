@@ -58,7 +58,8 @@ section.hero-sec {
   justify-content: center;
   --size: 50px;
   --p: 25px;
-  --R: 55.9px /*sqrt(var(--size)*var(--size) + var(--p)*var(--p))*/;
+  --R: 55.9px
+      /*sqrt(var(--size)*var(--size) + var(--p)*var(--p))*/ ;
   height: 200px;
   -webkit-mask: radial-gradient(var(--R) at 50% calc(100% - (var(--size) + var(--p))), blue 99%, rgba(0, 0, 0, 0) 101%) calc(50% - 2 * var(--size)) 0/calc(4 * var(--size)) 100%, radial-gradient(var(--R) at 50% calc(100% + var(--p)), rgba(0, 0, 0, 0) 99%, red 101%) 50% calc(100% - var(--size))/calc(4 * var(--size)) 100% repeat-x;
 }
@@ -154,7 +155,9 @@ section.about-me .badge-dark {
   }
 }
 @media (max-width: 767px) {
-  .heart, .heart:before, .heart:after {
+  .heart,
+  .heart:before,
+  .heart:after {
     height: 40px;
     width: 40px;
   }
