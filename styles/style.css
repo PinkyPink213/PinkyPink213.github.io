@@ -96,6 +96,7 @@ section.about-me .card {
   width: 100%;
   height: 100%;
   background-color: #FFD6EC;
+  margin: 20px;
 }
 section.about-me .card-body a {
   color: #FF2E63;
