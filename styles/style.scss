@@ -24,6 +24,15 @@ body {
     h2 {
         font-size: 40px;
     }
+    a {
+        &:active,&:focus,&:hover{
+            box-shadow: none !important;
+        }
+    }
+    .sub-title {
+        font-size: 20px;
+        margin: 0;
+    }
 }
 
 section {
@@ -201,6 +210,58 @@ section.about-me {
         transform: scale(1.2) rotate(-15deg);
     }
 }
+
+// section4: Work Project
+section.work-project {
+    .row.project-row {
+        margin: 40px 0;
+    }
+    .card{
+        margin: 10px 5px;
+        .back {
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+            background-color: rgba(0,0,0,.7);
+            height: 320px;
+            .btn {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .front {
+            -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+        }
+        .back, .front {
+            display: block;
+            transition-timing-function: cubic-bezier(.175,.885,.32,1.275);
+            transition-duration: .5s;
+            transition-property: opacity,-webkit-transform;
+            transition-property: transform,opacity;
+            transition-property: transform,opacity,-webkit-transform;
+            border-radius: 10px;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+            .back {
+                opacity: 1;
+                -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+            }
+        }
+    }
+}
+    
+// section5: contact 
 section.contact {
     .card {
         border-radius: 20px;
@@ -209,8 +270,10 @@ section.contact {
         border-color: $navlinkhover;
         min-width: 400px;
         margin-bottom: 10vh;
-        p{
+        a{
             font-size: 20px;
+            color:$text;
+            text-decoration: none;
         }
         i {
             font-size: 28px;
