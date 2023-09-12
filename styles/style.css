@@ -178,11 +178,13 @@ section.work-project .card {
 }
 section.work-project .card img.card-img-top {
   height: 350px;
+  border-radius: 10px;
+}
+section.work-project .card img.card-img-top.new-img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
-  border-radius: 10px;
 }
 section.work-project .card .back {
   background-color: rgba(255, 214, 236, 0.85);

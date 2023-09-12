@@ -232,9 +232,11 @@ section.work-project {
 
         img.card-img-top {
             height: 350px;
+            border-radius: 10px;
+        }
+        img.card-img-top.new-img {
             object-fit: cover;
             object-position: top;
-            border-radius: 10px;
         }
        
        
