@@ -353,6 +353,9 @@ section.contact .card i {
   }
 }
 @media (max-width: 767px) {
+  section.mini-project .mini-project-box img {
+    max-width: 300px;
+  }
   .heart {
     display: none;
   }
