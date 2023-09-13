@@ -13,6 +13,9 @@ $btnhover:black;
 $text:black;
 
 // Global
+html {
+    scroll-behavior: smooth;
+  }
 body {
     // font-family: 'Oswald', sans-serif;
     font-family: 'Fira Sans', sans-serif;
