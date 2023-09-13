@@ -524,5 +524,11 @@ section.contact {
         max-width: 300px;
         margin: 0px auto;
     }
+    section .intro-box, section .skill-box {
+        padding: 20px;
+    }
+    section.my-skill .skill-set {
+        margin-left: 12px;
+    }
     
 }
