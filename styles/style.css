@@ -400,4 +400,8 @@ section.contact .card i {
     border-radius: 40px;
     min-width: 40px;
   }
+  section .skill-box {
+    max-width: 300px;
+    margin: 0px auto;
+  }
 }/*# sourceMappingURL=style.css.map */
