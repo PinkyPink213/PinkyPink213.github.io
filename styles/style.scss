@@ -115,10 +115,8 @@ section.hero-sec {
     }
 
 }
-
-// section 2
-section.about-me {
-    .intro-box {
+section {
+    .intro-box,.skill-box{
         background: rgba(255, 214, 236,0.3);
         padding: 20px 25px;
         border-radius: 20px;
@@ -126,6 +124,11 @@ section.about-me {
         margin: 20px 0;
         margin-bottom: 0;
     }
+}
+
+// section 2
+section.about-me {
+ 
     em.p-text {
         color: #FF2E63;
         font-weight: 600;
@@ -225,7 +228,33 @@ section.about-me {
         transform: scale(1.2) rotate(-15deg);
     }
 }
-
+// section 3
+section.my-skill{
+    background: #FEF2F4;
+    .skill-set::before {
+        font-family: "bootstrap-icons";
+        content: '\F4B5';
+        position: relative;
+        left: -20px;
+        top: 26px;
+    }
+    .skill-set {
+        width: 25%;
+        text-align: left;
+        // margin: 5px;
+        margin-left: 25px;
+        p {
+            margin: 0;
+        }
+        p.main-skill{
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        p.skill-level {
+            text-transform: capitalize;
+        }
+    }
+}
 // section4: Work Project
 section.work-project {
     
@@ -453,6 +482,9 @@ section.contact {
         h2 {
             font-size: 36px;
         }
+    }
+    section.work-project .card img.card-img-top {
+        height: 300px;
     }
     section.about-me .intro-text {
        
