@@ -429,15 +429,6 @@ section.contact .card i {
   section.mini-project .mini-project-box .btn.btn-primary {
     max-width: 100%;
   }
-  #up-button {
-    width: 30px;
-    height: 30px;
-    right: 5px;
-    bottom: 10px;
-  }
-  #up-button i {
-    font-size: 20px;
-  }
 }
 @media (max-width: 480px) {
   body h2 {
