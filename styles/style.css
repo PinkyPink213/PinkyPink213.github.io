@@ -48,11 +48,11 @@ section {
   transform: translate(-50%, -50%);
   transition: all 0.3s;
 }
-#up-button:hover, #up-button:focus {
+#up-button:hover, #up-button:focus, #up-button:active {
   background-color: black;
   border: 1px solid white;
 }
-#up-button:hover i, #up-button:focus i {
+#up-button:hover i, #up-button:focus i, #up-button:active i {
   color: #FF2E63;
 }
 
@@ -428,6 +428,15 @@ section.contact .card i {
   }
   section.mini-project .mini-project-box .btn.btn-primary {
     max-width: 100%;
+  }
+  #up-button {
+    width: 30px;
+    height: 30px;
+    right: 5px;
+    bottom: 10px;
+  }
+  #up-button i {
+    font-size: 20px;
   }
 }
 @media (max-width: 480px) {

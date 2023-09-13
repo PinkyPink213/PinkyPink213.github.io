@@ -75,7 +75,8 @@ section {
         transition: all .3s;
     }
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
         background-color: black;
         border:1px solid white;
         i {
@@ -591,6 +592,15 @@ section.contact {
 
     section.mini-project .mini-project-box .btn.btn-primary {
         max-width: 100%;
+    }
+    #up-button {
+        width: 30px;
+        height: 30px;
+        right: 5px;
+        bottom: 10px;
+        i {
+            font-size: 20px;
+        }
     }
 
 
