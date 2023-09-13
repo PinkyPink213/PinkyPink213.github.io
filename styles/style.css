@@ -176,6 +176,30 @@ section.about-me .badge-dark {
     transform: scale(1.2) rotate(-15deg);
   }
 }
+section.mini-project .mini-project-box {
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid #FF74B1;
+  background-color: rgba(255, 214, 236, 0.3);
+  margin: 20px auto;
+}
+section.mini-project .mini-project-box img {
+  width: 100%;
+  border-radius: 20px;
+}
+section.mini-project .mini-project-box h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+section.mini-project .mini-project-box .btn.btn-primary {
+  max-width: 100px;
+  padding: 10px;
+  text-align: center;
+}
+section.mini-project .mini-project-box .btn-box {
+  width: 100%;
+}
+
 section.my-skill {
   background: #FEF2F4;
 }
@@ -353,6 +377,12 @@ section.contact .card i {
   }
   section.contact .card a {
     font-size: 18px;
+  }
+  section.mini-project .mini-project-box h3 {
+    font-size: 20px;
+  }
+  section.mini-project .mini-project-box .btn.btn-primary {
+    max-width: 100%;
   }
 }
 @media (max-width: 480px) {

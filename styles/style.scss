@@ -228,7 +228,36 @@ section.about-me {
         transform: scale(1.2) rotate(-15deg);
     }
 }
-// section 3
+// Section 3
+section.mini-project {
+    .mini-project-box{
+        border-radius: 20px;
+        padding: 20px;
+        border: 1px solid #FF74B1;
+        background-color: rgba(255, 214, 236, 0.3);
+        margin: 20px auto;
+        img {
+            width: 100%;
+            border-radius: 20px;
+        }
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 10px
+        }
+        .btn.btn-primary {
+            max-width: 100px;
+            padding: 10px;
+            text-align: center;
+            
+            // max-width: 100%;
+        }
+        .btn-box {
+            width: 100%;
+        }
+    } 
+}
+
+// section 4
 section.my-skill{
     background: #FEF2F4;
     .skill-set::before {
@@ -255,7 +284,7 @@ section.my-skill{
         }
     }
 }
-// section4: Work Project
+// section5: Work Project
 section.work-project {
     
     // background-color: #FEF2F4;
@@ -320,7 +349,7 @@ section.work-project {
     }
 
     
-// section5: contact 
+// section6: contact 
 section.contact {
     
     position: relative;
@@ -459,6 +488,16 @@ section.contact {
         
     }
 
+    section.mini-project .mini-project-box {
+        h3 {
+            font-size: 20px;
+        }
+    }
+    
+    section.mini-project .mini-project-box .btn.btn-primary {
+        max-width: 100%;
+    }
+
 
 }
 
@@ -530,5 +569,6 @@ section.contact {
     section.my-skill .skill-set {
         margin-left: 15px;
     }
+    
     
 }
