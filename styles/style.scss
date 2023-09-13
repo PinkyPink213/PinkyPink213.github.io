@@ -120,16 +120,23 @@ section.hero-sec {
 section.about-me {
     .intro-box {
         background: rgba(255, 214, 236,0.3);
-        padding: 20px;
+        padding: 20px 25px;
         border-radius: 20px;
         border: 1px solid #FF74B1;
-        margin: 20px;
+        margin: 20px 0;
+        margin-bottom: 0;
+    }
+    em.p-text {
+        color: #FF2E63;
+        font-weight: 600;
+        font-style: normal;
     }
     .me-img {
         width: 40%;
     }
     .intro-text {
         width: 60%;
+        padding: 20px;
     }
     .pink-profile {
         max-height: 400px;
@@ -141,7 +148,7 @@ section.about-me {
         -o-object-position: center -180px;
         object-position: center -180px;
         border-radius: 20px;
-        margin: 20px;
+        // padding: 20px;
         margin-bottom: 0;
     }
     
@@ -351,7 +358,19 @@ section.contact {
         height: 40px;
         width: 40px;
     }
-
+    section.about-me {
+        .me-img {
+            width: 100%;
+        }
+        .intro-text {
+            width: 100%;
+        }
+        .pink-profile {
+            max-height: 300px;
+            max-width: 300px;
+            margin-top: 20px;
+        }
+    }
     // .heart {
     //     left: 425px;
     // }
@@ -434,6 +453,10 @@ section.contact {
         h2 {
             font-size: 36px;
         }
+    }
+    section.about-me .intro-text {
+       
+        padding: 20px 0;
     }
     
     section.contact {
