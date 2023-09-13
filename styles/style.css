@@ -155,9 +155,6 @@ section.about-me .badge-dark {
     transform: scale(1.2) rotate(-15deg);
   }
 }
-section.work-project {
-  background-color: #FEF2F4;
-}
 section.work-project .row.project-row {
   margin: 30px 0;
 }
@@ -206,6 +203,22 @@ section.work-project .card:hover .back {
   opacity: 1;
 }
 
+section.contact {
+  position: relative;
+  padding-bottom: 15%;
+}
+section.contact svg.bottom-svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+section.contact svg.top-svg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+}
 section.contact .card {
   border-radius: 20px;
   margin: 20px;

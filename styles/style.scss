@@ -87,7 +87,7 @@ section {
 
 }
 
-// Section1
+// Section1: hero
 section.hero-sec {
     background-color: #FEF2F4;
     color: $text;
@@ -207,11 +207,13 @@ section.about-me {
 
 // section4: Work Project
 section.work-project {
-    background-color: #FEF2F4;
+    
+    // background-color: #FEF2F4;
     // padding-bottom: 0;
     .row.project-row {
         margin: 30px 0;
     }
+    
     .tag {
         margin-top: 10px;
     }
@@ -270,6 +272,22 @@ section.work-project {
     
 // section5: contact 
 section.contact {
+    
+    position: relative;
+    padding-bottom: 15%;
+    // padding-top: 10%;
+    svg.bottom-svg {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+    }
+    svg.top-svg {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        left: 0;
+    }
     .card {
         border-radius: 20px;
         margin: 20px;
@@ -290,6 +308,7 @@ section.contact {
             min-width: 50px;
         }
     }
+    
 }
 
 // Footer
