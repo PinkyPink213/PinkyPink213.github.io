@@ -446,7 +446,7 @@ section.contact .card i {
     margin: 20px auto;
   }
   section .intro-box, section .skill-box {
-    padding: 20px;
+    padding: 20px 25px;
   }
   section.my-skill .skill-set {
     margin-left: 15px;
