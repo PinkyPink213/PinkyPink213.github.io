@@ -230,6 +230,7 @@ section.contact .card {
   background-color: #FEF2F4;
   border-color: #FFA1CF;
   width: 100%;
+  max-width: 500px;
   margin-bottom: 10vh;
 }
 section.contact .card a {
@@ -254,16 +255,16 @@ section.contact .card i {
   .navbar-dark.navbar a.nav-link {
     font-size: 18px;
   }
-}
-@media (max-width: 767px) {
   .heart,
   .heart:before,
   .heart:after {
     height: 40px;
     width: 40px;
   }
+}
+@media (max-width: 767px) {
   .heart {
-    left: 425px;
+    display: none;
   }
   .navbar-dark .navbar-toggler-icon::before {
     font-family: "Bootstrap-icons";
@@ -289,14 +290,14 @@ section.contact .card i {
     padding: 5px 10px !important;
   }
   section.contact .card {
-    min-width: 100%;
     width: 100%;
+    min-width: 475px;
+  }
+  section.contact .card a {
+    font-size: 18px;
   }
 }
 @media (max-width: 480px) {
-  .heart {
-    display: none;
-  }
   body h2 {
     font-size: 36px;
   }
@@ -321,8 +322,11 @@ section.contact .card i {
     padding-top: 10px;
   }
   section.contact .card {
-    min-width: 40px;
+    min-width: 100%;
     margin-bottom: 5vh;
+  }
+  section.contact .card .card-body {
+    flex-direction: column;
   }
   section.contact .card a {
     font-size: 16px;
