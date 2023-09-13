@@ -207,6 +207,11 @@ section.contact {
   position: relative;
   padding-bottom: 15%;
 }
+section.contact .email-link {
+  border-right: 2px solid #FFA1CF;
+  margin-right: 20px;
+  padding-right: 20px;
+}
 section.contact svg.bottom-svg {
   position: absolute;
   bottom: 0;
@@ -224,7 +229,7 @@ section.contact .card {
   margin: 20px;
   background-color: #FEF2F4;
   border-color: #FFA1CF;
-  min-width: 400px;
+  width: 100%;
   margin-bottom: 10vh;
 }
 section.contact .card a {
@@ -307,6 +312,14 @@ section.contact .card i {
   section.hero-sec h2 {
     font-size: 36px;
   }
+  section.contact .email-link {
+    border-right: none;
+    margin-right: 0;
+    padding-right: 0;
+  }
+  section.contact .card .card-body div + div {
+    padding-top: 10px;
+  }
   section.contact .card {
     min-width: 40px;
     margin-bottom: 5vh;
@@ -316,5 +329,7 @@ section.contact .card i {
   }
   section.contact .card i {
     font-size: 20px;
+    border-radius: 40px;
+    min-width: 40px;
   }
 }/*# sourceMappingURL=style.css.map */

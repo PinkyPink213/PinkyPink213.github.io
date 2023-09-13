@@ -276,6 +276,11 @@ section.contact {
     position: relative;
     padding-bottom: 15%;
     // padding-top: 10%;
+    .email-link {
+        border-right: 2px solid #FFA1CF;
+        margin-right: 20px;
+        padding-right: 20px;
+    }
     svg.bottom-svg {
         position: absolute;
         bottom: 0;
@@ -293,7 +298,8 @@ section.contact {
         margin: 20px;
         background-color: #FEF2F4;
         border-color: $navlinkhover;
-        min-width: 400px;
+        width: 100%;
+        // min-width: 500px;
         margin-bottom: 10vh;
         a{
             font-size: 20px;
@@ -412,6 +418,15 @@ section.contact {
     }
     
     section.contact {
+        
+        .email-link {
+            border-right: none;
+            margin-right: 0;
+            padding-right: 0;
+        }
+        .card .card-body div+div {
+            padding-top: 10px;
+        }
         .card {
             min-width: 40px;
             margin-bottom: 5vh;
@@ -420,6 +435,8 @@ section.contact {
             }
             i {
                 font-size: 20px;
+                border-radius: 40px;
+                min-width: 40px;
             }
         }
     }
