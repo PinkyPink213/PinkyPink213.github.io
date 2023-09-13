@@ -237,6 +237,9 @@ section.about-me {
 }
 
 // heart
+.heart-box {
+    position: relative;
+}
 .heart {
     position: absolute;
     margin: auto;
@@ -247,10 +250,10 @@ section.about-me {
     background-color: #FF74B1;
     height: 50px;
     width: 50px;
-    -webkit-transform: rotate(-15deg);
-    -ms-transform: rotate(-15deg);
+    // -webkit-transform: rotate(-15deg);
+    // -ms-transform: rotate(-15deg);
     transform: rotate(-15deg);
-    -webkit-animation: beat .3s infinite alternate;
+    // -webkit-animation: beat .3s infinite alternate;
     animation: beat .3s infinite alternate;
 }
 
