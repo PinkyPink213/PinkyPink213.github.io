@@ -348,6 +348,8 @@ section.contact .card i {
     max-height: 300px;
     max-width: 300px;
     margin-top: 20px;
+    -o-object-position: center -160px;
+    object-position: center -160px;
   }
 }
 @media (max-width: 767px) {
