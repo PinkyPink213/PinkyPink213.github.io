@@ -15,10 +15,11 @@ $text:black;
 // Global
 html {
     scroll-behavior: smooth;
-  }
+}
+
 body {
-    // font-family: 'Oswald', sans-serif;
     font-family: 'Fira Sans', sans-serif;
+    position: relative;
 
     .row {
         width: 100%;
@@ -28,11 +29,16 @@ body {
     h2 {
         font-size: 40px;
     }
+
     a {
-        &:active,&:focus,&:hover{
+
+        &:active,
+        &:focus,
+        &:hover {
             box-shadow: none !important;
         }
     }
+
     .sub-title {
         font-size: 20px;
         margin: 0;
@@ -43,6 +49,41 @@ section {
     padding: 5%;
 }
 
+#up-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    background: #FF2E63;
+    border-radius: 5px;
+    border:1px solid white;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    i {
+        font-size: 50px;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+    }
+    &:hover,
+    &:focus {
+        background-color: black;
+        border:1px solid white;
+        i {
+            color:#FF2E63;
+        }
+    }
+}
+
 .btn.btn-primary {
     background: $btn;
     color: $btntext;
@@ -51,12 +92,12 @@ section {
     padding: 10px 30px;
     max-width: 150px;
     width: 100%;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
     &:hover,
     &:focus,
     &:active {
-        -webkit-transition: all .3s;
-        -o-transition: all .3s;
-        transition: all .3s;
         background: #FF2E63;
         color: $btnhover;
     }
@@ -77,13 +118,13 @@ section {
         font-size: 20px;
         color: $navlink1;
         padding: 0px 0.6em !important;
-
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
         &:hover,
         &:focus,
         &:active {
-            -webkit-transition: all .3s;
-            -o-transition: all .3s;
-            transition: all .3s;
+            
             color: $navlinkhover;
         }
     }
@@ -99,8 +140,7 @@ section.hero-sec {
     height: 100%;
     --size: 50px;
     --p: 25px;
-    --R: 55.9px
-    ;
+    --R: 55.9px;
 
     height: 200px;
 
@@ -118,9 +158,12 @@ section.hero-sec {
     }
 
 }
+
 section {
-    .intro-box,.skill-box{
-        background: rgba(255, 214, 236,0.3);
+
+    .intro-box,
+    .skill-box {
+        background: rgba(255, 214, 236, 0.3);
         padding: 20px 25px;
         border-radius: 20px;
         border: 1px solid #FF74B1;
@@ -131,19 +174,22 @@ section {
 
 // section 2
 section.about-me {
- 
+
     em.p-text {
         color: #FF2E63;
         font-weight: 600;
         font-style: normal;
     }
+
     .me-img {
         width: 40%;
     }
+
     .intro-text {
         width: 60%;
         padding: 20px;
     }
+
     .pink-profile {
         max-height: 400px;
         max-width: 400px;
@@ -157,7 +203,7 @@ section.about-me {
         // padding: 20px;
         margin-bottom: 0;
     }
-    
+
 
     i {
         font-size: 40px;
@@ -200,7 +246,10 @@ section.about-me {
     background-color: #FF74B1;
     height: 50px;
     width: 50px;
+    -webkit-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
     transform: rotate(-15deg);
+    -webkit-animation: beat .3s infinite alternate;
     animation: beat .3s infinite alternate;
 }
 
@@ -228,18 +277,23 @@ section.about-me {
 
 @keyframes beat {
     to {
+        -webkit-transform: scale(1.2) rotate(-15deg);
+        -ms-transform: scale(1.2) rotate(-15deg);
         transform: scale(1.2) rotate(-15deg);
     }
 }
+
 // Section 3
 section.mini-project {
-    .mini-project-box{
+    .mini-project-box {
         border-radius: 20px;
         padding: 20px;
         border: 1px solid #FF74B1;
         background-color: rgba(255, 214, 236, 0.3);
         margin: 20px auto;
+
         .badage-box {
+
             // margin-bottom: 10px;
             .badge {
                 margin: 5px;
@@ -247,32 +301,37 @@ section.mini-project {
                 background: #FF2E63;
                 text-transform: uppercase;
             }
-            
+
         }
+
         img.mini-img {
             width: 100%;
             border-radius: 20px;
         }
+
         h3 {
             margin-top: 20px;
             margin-bottom: 0;
         }
+
         .btn.btn-primary {
             max-width: 100px;
             padding: 10px;
             text-align: center;
-            
+
             // max-width: 100%;
         }
+
         .btn-box {
             width: 100%;
         }
-    } 
+    }
 }
 
 // section 4
-section.my-skill{
+section.my-skill {
     background: #FEF2F4;
+
     .skill-set::before {
         font-family: "bootstrap-icons";
         content: '\F4B5';
@@ -280,43 +339,49 @@ section.my-skill{
         left: -20px;
         top: 26px;
     }
+
     .skill-set {
         width: 25%;
         text-align: left;
         // margin: 5px;
         margin-left: 25px;
+
         p {
             margin: 0;
         }
-        p.main-skill{
+
+        p.main-skill {
             font-weight: bold;
             text-transform: uppercase;
         }
+
         p.skill-level {
             text-transform: capitalize;
         }
     }
 }
+
 // section5: Work Project
 section.work-project {
-    
+
     // background-color: #FEF2F4;
     // padding-bottom: 0;
     .row.project-row {
         margin: 30px 0;
     }
-    
+
     .tag {
         margin-top: 10px;
     }
+
     span.badge.bg-dark {
         padding: 5px 15px;
         margin: 5px 10px;
         font-weight: 400;
         font-size: 16px;
     }
-    
-    .card{
+
+    .card {
         position: relative;
         border-radius: 10px;
         margin: 10px 5px;
@@ -328,12 +393,14 @@ section.work-project {
             height: 350px;
             border-radius: 10px;
         }
+
         img.card-img-top.new-img {
             object-fit: cover;
             object-position: top;
         }
+
         .back {
-            background-color: rgba(255, 214, 236,0.85);
+            background-color: rgba(255, 214, 236, 0.85);
             position: absolute;
             opacity: 0;
             top: 0;
@@ -341,50 +408,55 @@ section.work-project {
             width: 100%;
             height: 100%;
             border-radius: 10px;
-      
+
             .btn {
                 position: absolute;
                 top: 50%;
                 left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
             }
         }
-       
-        &:hover
-         {
+
+        &:hover {
             .back {
                 opacity: 1;
-               
+
             }
         }
     }
-        
-    }
 
-    
+}
+
+
 // section6: contact 
 section.contact {
-    
+
     position: relative;
     padding-bottom: 15%;
+
     // padding-top: 10%;
     .email-link {
         border-right: 2px solid #FFA1CF;
         margin-right: 20px;
         padding-right: 20px;
     }
+
     svg.bottom-svg {
         position: absolute;
         bottom: -1px;
         width: 100%;
         left: 0;
     }
+
     svg.top-svg {
         position: absolute;
         top: 0;
         width: 100%;
         left: 0;
     }
+
     .card {
         border-radius: 20px;
         margin: 20px;
@@ -394,11 +466,13 @@ section.contact {
         max-width: 500px;
         // min-width: 500px;
         margin-bottom: 10vh;
-        a{
+
+        a {
             font-size: 20px;
-            color:$text;
+            color: $text;
             text-decoration: none;
         }
+
         i {
             font-size: 28px;
             background: $primary;
@@ -407,7 +481,7 @@ section.contact {
             min-width: 50px;
         }
     }
-    
+
 }
 
 // Footer
@@ -423,19 +497,23 @@ section.contact {
     .navbar-dark.navbar a.nav-link {
         font-size: 18px;
     }
+
     .heart,
     .heart:before,
     .heart:after {
         height: 40px;
         width: 40px;
     }
+
     section.about-me {
         .me-img {
             width: 100%;
         }
+
         .intro-text {
             width: 100%;
         }
+
         .pink-profile {
             max-height: 300px;
             max-width: 300px;
@@ -444,13 +522,14 @@ section.contact {
             object-position: center -160px;
         }
     }
-   
+
 }
 
 @media (max-width: 767px) {
     section.mini-project .mini-project-box img.mini-img {
         max-width: 300px;
     }
+
     .heart {
         display: none;
     }
@@ -496,11 +575,12 @@ section.contact {
         .card {
             width: 100%;
             min-width: 475px;
+
             a {
                 font-size: 18px;
             }
         }
-        
+
     }
 
     section.mini-project .mini-project-box {
@@ -517,15 +597,17 @@ section.contact {
 }
 
 @media (max-width: 480px) {
-   
-    body{
+
+    body {
         h2 {
             font-size: 36px;
         }
-        .sub-title{
+
+        .sub-title {
             font-size: 18px;
         }
-    } 
+    }
+
     section.hero-sec {
         min-height: 90vh;
 
@@ -537,36 +619,43 @@ section.contact {
             font-size: 36px;
         }
     }
+
     section.work-project .card img.card-img-top {
         height: 300px;
     }
+
     section.about-me .intro-text {
-       
+
         padding: 20px 0;
     }
-    
+
     section.contact {
-        
+
         .email-link {
             border-right: none;
             margin-right: 0;
             padding-right: 0;
         }
+
         .card .card-body div+div {
             padding-top: 10px;
         }
+
         .card {
             min-width: 100%;
             margin-bottom: 5vh;
+
             .card-body {
                 -webkit-box-orient: vertical;
                 -webkit-box-direction: normal;
-                    -ms-flex-direction: column;
-                        flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
             }
+
             a {
                 font-size: 16px;
             }
+
             i {
                 font-size: 20px;
                 border-radius: 40px;
@@ -574,17 +663,21 @@ section.contact {
             }
         }
     }
+
     section .skill-box {
         max-width: 300px;
         margin: 20px auto;
     }
-    section .intro-box, section .skill-box {
+
+    section .intro-box,
+    section .skill-box {
         padding: 20px 25px;
     }
+
     section.my-skill .skill-set {
         margin-left: 15px;
     }
-    
-    
-    
+
+
+
 }

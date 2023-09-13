@@ -7,6 +7,7 @@ html {
 
 body {
   font-family: "Fira Sans", sans-serif;
+  position: relative;
 }
 body .row {
   width: 100%;
@@ -27,6 +28,34 @@ section {
   padding: 5%;
 }
 
+#up-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  background: #FF2E63;
+  border-radius: 5px;
+  border: 1px solid white;
+  transition: all 0.3s;
+}
+#up-button i {
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+}
+#up-button:hover, #up-button:focus {
+  background-color: black;
+  border: 1px solid white;
+}
+#up-button:hover i, #up-button:focus i {
+  color: #FF2E63;
+}
+
 .btn.btn-primary {
   background: black;
   color: white;
@@ -35,9 +64,9 @@ section {
   padding: 10px 30px;
   max-width: 150px;
   width: 100%;
+  transition: all 0.3s;
 }
 .btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active {
-  transition: all 0.3s;
   background: #FF2E63;
   color: black;
 }
@@ -55,9 +84,9 @@ section {
   font-size: 20px;
   color: #EAEAEA;
   padding: 0px 0.6em !important;
+  transition: all 0.3s;
 }
 .navbar-dark.navbar a.nav-link:hover, .navbar-dark.navbar a.nav-link:focus, .navbar-dark.navbar a.nav-link:active {
-  transition: all 0.3s;
   color: #FFA1CF;
 }
 
@@ -69,7 +98,7 @@ section.hero-sec {
   height: 100%;
   --size: 50px;
   --p: 25px;
-  --R: 55.9px ;
+  --R: 55.9px;
   height: 200px;
   -webkit-mask: radial-gradient(var(--R) at 50% calc(100% - (var(--size) + var(--p))), blue 99%, rgba(0, 0, 0, 0) 101%) calc(50% - 2 * var(--size)) 0/calc(4 * var(--size)) 100%, radial-gradient(var(--R) at 50% calc(100% + var(--p)), rgba(0, 0, 0, 0) 99%, red 101%) 50% calc(100% - var(--size))/calc(4 * var(--size)) 100% repeat-x;
 }
@@ -81,7 +110,8 @@ section.hero-sec h2 {
   font-size: 48px;
 }
 
-section .intro-box, section .skill-box {
+section .intro-box,
+section .skill-box {
   background: rgba(255, 214, 236, 0.3);
   padding: 20px 25px;
   border-radius: 20px;
@@ -449,7 +479,8 @@ section.contact .card i {
     max-width: 300px;
     margin: 20px auto;
   }
-  section .intro-box, section .skill-box {
+  section .intro-box,
+  section .skill-box {
     padding: 20px 25px;
   }
   section.my-skill .skill-set {
