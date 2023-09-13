@@ -189,7 +189,7 @@ section.mini-project .mini-project-box .badage-box .badge {
   background: #FF2E63;
   text-transform: uppercase;
 }
-section.mini-project .mini-project-box img {
+section.mini-project .mini-project-box img.mini-img {
   width: 100%;
   border-radius: 20px;
 }
@@ -353,7 +353,7 @@ section.contact .card i {
   }
 }
 @media (max-width: 767px) {
-  section.mini-project .mini-project-box img {
+  section.mini-project .mini-project-box img.mini-img {
     max-width: 300px;
   }
   .heart {
