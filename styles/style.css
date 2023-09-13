@@ -295,7 +295,7 @@ section.contact .email-link {
 }
 section.contact svg.bottom-svg {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   width: 100%;
   left: 0;
 }
