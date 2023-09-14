@@ -169,6 +169,10 @@ section.about-me .badge-dark {
   padding: 3px 6px;
 }
 
+.heart-box {
+  position: relative;
+}
+
 .heart {
   position: absolute;
   margin: auto;
