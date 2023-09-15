@@ -214,6 +214,7 @@ section.about-me .badge-dark {
     transform: scale(1.2) rotate(-15deg);
   }
 }
+
 section.mini-project .mini-project-box {
   border-radius: 20px;
   padding: 20px;
