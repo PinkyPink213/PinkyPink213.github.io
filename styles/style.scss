@@ -295,7 +295,9 @@ section.mini-project {
         border: 1px solid #FF74B1;
         background-color: rgba(255, 214, 236, 0.3);
         margin: 20px auto;
-
+        height: 100%;
+        max-width: 350px;
+        max-height: 600px;
         .badage-box {
 
             // margin-bottom: 10px;
@@ -526,6 +528,10 @@ section.contact {
             object-position: center -160px;
         }
     }
+    section.mini-project .mini-project-box {
+        height: auto;
+        max-width: 300px;
+    }
 
 }
 
@@ -588,6 +594,9 @@ section.contact {
     }
 
     section.mini-project .mini-project-box {
+        height: auto;
+        max-width: 100%;
+        width: 100%;
         h3 {
             font-size: 20px;
         }
@@ -690,6 +699,7 @@ section.contact {
     section.my-skill .skill-set {
         margin-left: 15px;
     }
+    
 
 
 
