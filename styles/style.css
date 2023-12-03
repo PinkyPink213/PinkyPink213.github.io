@@ -214,6 +214,14 @@ section.about-me .badge-dark {
     transform: scale(1.2) rotate(-15deg);
   }
 }
+section.my-thesis .my-system {
+  width: 100%;
+  height: 100%;
+  max-width: 480px;
+}
+section.my-thesis .thesis-topic {
+  font-size: 18px;
+}
 
 section.mini-project .mini-project-box {
   border-radius: 20px;
@@ -370,6 +378,12 @@ section.contact .card i {
   color: #FFD6EC;
 }
 
+@media (max-width: 1199px) {
+  section.my-thesis .my-system {
+    max-width: 100%;
+    padding-bottom: 20px;
+  }
+}
 @media (max-width: 991px) {
   .navbar-dark.navbar a.nav-link {
     font-size: 18px;
