@@ -131,6 +131,7 @@ section.about-me .me-img {
 section.about-me .intro-text {
   width: 60%;
   padding: 20px;
+  padding-top: 0;
 }
 section.about-me .pink-profile {
   max-height: 400px;

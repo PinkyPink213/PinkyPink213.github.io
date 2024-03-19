@@ -57,10 +57,11 @@ section {
     height: 55px;
     background: #FF2E63;
     border-radius: 5px;
-    border:1px solid white;
+    border: 1px solid white;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
+
     i {
         font-size: 50px;
         color: white;
@@ -74,13 +75,15 @@ section {
         -o-transition: all .3s;
         transition: all .3s;
     }
+
     &:hover,
     &:focus,
     &:active {
         background-color: black;
-        border:1px solid white;
+        border: 1px solid white;
+
         i {
-            color:#FF2E63;
+            color: #FF2E63;
         }
     }
 }
@@ -96,6 +99,7 @@ section {
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
+
     &:hover,
     &:focus,
     &:active {
@@ -122,10 +126,11 @@ section {
         -webkit-transition: all .3s;
         -o-transition: all .3s;
         transition: all .3s;
+
         &:hover,
         &:focus,
         &:active {
-            
+
             color: $navlinkhover;
         }
     }
@@ -189,6 +194,7 @@ section.about-me {
     .intro-text {
         width: 60%;
         padding: 20px;
+        padding-top: 0;
     }
 
     .pink-profile {
@@ -240,6 +246,7 @@ section.about-me {
 .heart-box {
     position: relative;
 }
+
 .heart {
     position: absolute;
     margin: auto;
@@ -287,14 +294,15 @@ section.about-me {
     }
 }
 
-section.my-thesis{
-    .my-system{
-        width:100%;
-        height:100%;
+section.my-thesis {
+    .my-system {
+        width: 100%;
+        height: 100%;
         max-width: 480px;
     }
-    .thesis-topic{
-        font-size:18px;
+
+    .thesis-topic {
+        font-size: 18px;
     }
 }
 
@@ -309,6 +317,7 @@ section.mini-project {
         height: 100%;
         max-width: 350px;
         max-height: 600px;
+
         .badage-box {
 
             // margin-bottom: 10px;
@@ -510,15 +519,16 @@ section.contact {
 
 
 // Media Query
-@media (max-width:1199px){
-    section.my-thesis{
-        
-        .my-system{
+@media (max-width:1199px) {
+    section.my-thesis {
+
+        .my-system {
             max-width: 100%;
             padding-bottom: 20px;
         }
     }
 }
+
 @media (max-width: 991px) {
     .navbar-dark.navbar a.nav-link {
         font-size: 18px;
@@ -548,11 +558,12 @@ section.contact {
             object-position: center -160px;
         }
     }
+
     section.mini-project .mini-project-box {
         height: auto;
         max-width: 300px;
     }
-   
+
 
 }
 
@@ -618,6 +629,7 @@ section.contact {
         height: auto;
         max-width: 100%;
         width: 100%;
+
         h3 {
             font-size: 20px;
         }
@@ -626,15 +638,18 @@ section.contact {
     section.mini-project .mini-project-box .btn.btn-primary {
         max-width: 100%;
     }
+
     #up-button {
         width: 32px;
         height: 32px;
         right: 5px;
         bottom: 10px;
+
         i {
             font-size: 26px;
         }
     }
+
     // section.my-skill { 
     //     .skill-set{
     //         width: 100%;
@@ -726,7 +741,7 @@ section.contact {
     section.my-skill .skill-set {
         margin-left: 15px;
     }
-    
+
 
 
 
