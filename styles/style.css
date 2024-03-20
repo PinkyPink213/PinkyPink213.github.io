@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
-
 html {
   scroll-behavior: smooth;
 }
@@ -10,25 +9,22 @@ body {
   font-family: "Fira Sans", sans-serif;
   position: relative;
 }
-
 body .row {
   width: 100%;
   margin: 0;
 }
-
 body h2 {
   font-size: 40px;
 }
-
-body a:active,
-body a:focus,
-body a:hover {
+body a:active, body a:focus, body a:hover {
   box-shadow: none !important;
 }
-
 body .sub-title {
   font-size: 20px;
   margin: 0;
+}
+body img {
+  width: 100%;
 }
 
 section {
@@ -46,7 +42,6 @@ section {
   border: 1px solid white;
   transition: all 0.3s;
 }
-
 #up-button i {
   font-size: 50px;
   color: white;
@@ -56,17 +51,11 @@ section {
   transform: translate(-50%, -50%);
   transition: all 0.3s;
 }
-
-#up-button:hover,
-#up-button:focus,
-#up-button:active {
+#up-button:hover, #up-button:focus, #up-button:active {
   background-color: black;
   border: 1px solid white;
 }
-
-#up-button:hover i,
-#up-button:focus i,
-#up-button:active i {
+#up-button:hover i, #up-button:focus i, #up-button:active i {
   color: #FF2E63;
 }
 
@@ -80,10 +69,7 @@ section {
   width: 100%;
   transition: all 0.3s;
 }
-
-.btn.btn-primary:hover,
-.btn.btn-primary:focus,
-.btn.btn-primary:active {
+.btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active {
   background: #FF2E63;
   color: black;
 }
@@ -92,12 +78,10 @@ section {
   background-color: black;
   text-transform: uppercase;
 }
-
 .navbar-dark.navbar img.header-logo {
   max-width: 100px;
   height: 100%;
 }
-
 .navbar-dark.navbar a.nav-link {
   font-weight: 300;
   font-size: 20px;
@@ -105,10 +89,7 @@ section {
   padding: 0px 0.6em !important;
   transition: all 0.3s;
 }
-
-.navbar-dark.navbar a.nav-link:hover,
-.navbar-dark.navbar a.nav-link:focus,
-.navbar-dark.navbar a.nav-link:active {
+.navbar-dark.navbar a.nav-link:hover, .navbar-dark.navbar a.nav-link:focus, .navbar-dark.navbar a.nav-link:active {
   color: #FFA1CF;
 }
 
@@ -124,11 +105,9 @@ section.hero-sec {
   height: 200px;
   -webkit-mask: radial-gradient(var(--R) at 50% calc(100% - (var(--size) + var(--p))), blue 99%, rgba(0, 0, 0, 0) 101%) calc(50% - 2 * var(--size)) 0/calc(4 * var(--size)) 100%, radial-gradient(var(--R) at 50% calc(100% + var(--p)), rgba(0, 0, 0, 0) 99%, red 101%) 50% calc(100% - var(--size))/calc(4 * var(--size)) 100% repeat-x;
 }
-
 section.hero-sec h1 {
   font-size: 72px;
 }
-
 section.hero-sec h2 {
   font-weight: 300;
   font-size: 48px;
@@ -149,17 +128,14 @@ section.about-me em.p-text {
   font-weight: 600;
   font-style: normal;
 }
-
 section.about-me .me-img {
   width: 40%;
 }
-
 section.about-me .intro-text {
   width: 60%;
   padding: 20px;
   padding-top: 0;
 }
-
 section.about-me .pink-profile {
   max-height: 400px;
   max-width: 400px;
@@ -172,11 +148,9 @@ section.about-me .pink-profile {
   border-radius: 20px;
   margin-bottom: 0;
 }
-
 section.about-me i {
   font-size: 40px;
 }
-
 section.about-me .card {
   border: none;
   max-width: 350px;
@@ -186,16 +160,13 @@ section.about-me .card {
   height: 100%;
   background-color: #FFD6EC;
 }
-
 section.about-me .card-body a {
   color: #FF2E63;
   text-decoration: none;
 }
-
 section.about-me i.bi.bi-box-arrow-up-right {
   font-size: 16px;
 }
-
 section.about-me .badge-dark {
   background: black;
   margin: 2px;
@@ -247,13 +218,11 @@ section.about-me .badge-dark {
     transform: scale(1.2) rotate(-15deg);
   }
 }
-
 section.my-thesis .my-system {
   width: 100%;
   height: 100%;
   max-width: 480px;
 }
-
 section.my-thesis .thesis-topic {
   font-size: 18px;
 }
@@ -268,30 +237,26 @@ section.mini-project .mini-project-box {
   max-width: 350px;
   max-height: 600px;
 }
-
 section.mini-project .mini-project-box .badage-box .badge {
   margin: 5px;
   padding: 5px 10px;
   background: #FF2E63;
   text-transform: uppercase;
 }
-
 section.mini-project .mini-project-box img.mini-img {
   width: 100%;
   border-radius: 20px;
+  min-height: 200px;
 }
-
 section.mini-project .mini-project-box h3 {
   margin-top: 20px;
   margin-bottom: 0;
 }
-
 section.mini-project .mini-project-box .btn.btn-primary {
   max-width: 100px;
   padding: 10px;
   text-align: center;
 }
-
 section.mini-project .mini-project-box .btn-box {
   width: 100%;
 }
@@ -299,7 +264,6 @@ section.mini-project .mini-project-box .btn-box {
 section.my-skill {
   background: #FEF2F4;
 }
-
 section.my-skill .skill-set::before {
   font-family: "bootstrap-icons";
   content: "\f4b5";
@@ -307,21 +271,17 @@ section.my-skill .skill-set::before {
   left: -20px;
   top: 26px;
 }
-
 section.my-skill .skill-set {
   text-align: left;
   margin-left: 25px;
 }
-
 section.my-skill .skill-set p {
   margin: 0;
 }
-
 section.my-skill .skill-set p.main-skill {
   font-weight: bold;
   text-transform: uppercase;
 }
-
 section.my-skill .skill-set p.skill-level {
   text-transform: capitalize;
 }
@@ -329,37 +289,31 @@ section.my-skill .skill-set p.skill-level {
 section.work-project .row.project-row {
   margin: 30px 0;
 }
-
 section.work-project .tag {
   margin-top: 10px;
 }
-
 section.work-project span.badge.bg-dark {
   padding: 5px 15px;
   margin: 5px 10px;
   font-weight: 400;
   font-size: 16px;
 }
-
 section.work-project .card {
   position: relative;
   border-radius: 10px;
   margin: 10px 5px;
   transition: all 0.3s;
 }
-
 section.work-project .card img.card-img-top {
   height: 350px;
   border-radius: 10px;
 }
-
 section.work-project .card img.card-img-top.new-img {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: top;
-  object-position: top;
+     object-position: top;
 }
-
 section.work-project .card .back {
   background-color: rgba(255, 214, 236, 0.85);
   position: absolute;
@@ -370,14 +324,12 @@ section.work-project .card .back {
   height: 100%;
   border-radius: 10px;
 }
-
 section.work-project .card .back .btn {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 section.work-project .card:hover .back {
   opacity: 1;
 }
@@ -386,27 +338,23 @@ section.contact {
   position: relative;
   padding-bottom: 15%;
 }
-
 section.contact .email-link {
   border-right: 2px solid #FFA1CF;
   margin-right: 20px;
   padding-right: 20px;
 }
-
 section.contact svg.bottom-svg {
   position: absolute;
   bottom: -1px;
   width: 100%;
   left: 0;
 }
-
 section.contact svg.top-svg {
   position: absolute;
   top: 0;
   width: 100%;
   left: 0;
 }
-
 section.contact .card {
   border-radius: 20px;
   margin: 20px;
@@ -416,13 +364,11 @@ section.contact .card {
   max-width: 500px;
   margin-bottom: 10vh;
 }
-
 section.contact .card a {
   font-size: 20px;
   color: black;
   text-decoration: none;
 }
-
 section.contact .card i {
   font-size: 28px;
   background: #FFD6EC;
@@ -441,34 +387,23 @@ section.contact .card i {
     max-width: 100%;
     padding-bottom: 20px;
   }
-
-  section.mini-project .mini-project-box {
-    max-width: 280px;
-  }
 }
-
 @media (max-width: 991px) {
   .navbar-dark.navbar a.nav-link {
     font-size: 18px;
   }
-
   .heart,
   .heart:before,
   .heart:after {
     height: 40px;
     width: 40px;
   }
-
-
-
   section.about-me .me-img {
     width: 100%;
   }
-
   section.about-me .intro-text {
     width: 100%;
   }
-
   section.about-me .pink-profile {
     max-height: 300px;
     max-width: 300px;
@@ -476,159 +411,123 @@ section.contact .card i {
     -o-object-position: center -160px;
     object-position: center -160px;
   }
-
   section.mini-project .mini-project-box {
-    height: auto;
+    height: 90%;
     max-width: 300px;
   }
 }
-
 @media (max-width: 767px) {
   section.mini-project .mini-project-box img.mini-img {
     max-width: 300px;
   }
-
   .heart {
     display: none;
   }
-
   .navbar-dark .navbar-toggler-icon::before {
     font-family: "Bootstrap-icons";
     content: "\f479";
     font-size: 30px;
     color: white;
   }
-
-  .navbar-dark .navbar-toggler-icon:hover::before,
-  .navbar-dark .navbar-toggler-icon:focus::before,
-  .navbar-dark .navbar-toggler-icon:active::before {
+  .navbar-dark .navbar-toggler-icon:hover::before, .navbar-dark .navbar-toggler-icon:focus::before, .navbar-dark .navbar-toggler-icon:active::before {
     transition: all 0.3s;
     color: #FFA1CF;
   }
-
   .navbar-dark .navbar-toggler {
     color: transparent;
     border-color: white;
   }
-
   .navbar-dark .navbar-toggler-icon {
     background-image: none;
   }
-
   .navbar-nav {
     padding: 5px 0;
   }
-
   .navbar-dark.navbar a.nav-link {
     padding: 5px 10px !important;
   }
-
   section.contact .card {
     width: 100%;
     min-width: 475px;
   }
-
   section.contact .card a {
     font-size: 18px;
   }
-
   section.mini-project .mini-project-box {
     height: auto;
     max-width: 100%;
     width: 100%;
   }
-
   section.mini-project .mini-project-box h3 {
     font-size: 20px;
   }
-
   section.mini-project .mini-project-box .btn.btn-primary {
     max-width: 100%;
   }
-
   #up-button {
     width: 32px;
     height: 32px;
     right: 5px;
     bottom: 10px;
   }
-
   #up-button i {
     font-size: 26px;
   }
 }
-
 @media (max-width: 480px) {
   body h2 {
     font-size: 36px;
   }
-
   body .sub-title {
     font-size: 18px;
   }
-
   section.hero-sec {
     min-height: 90vh;
   }
-
   section.hero-sec h1 {
     font-size: 50px;
   }
-
   section.hero-sec h2 {
     font-size: 36px;
   }
-
   section.work-project .card img.card-img-top {
     height: 300px;
   }
-
   section.about-me .intro-text {
     padding: 20px 0;
   }
-
   section.contact .email-link {
     border-right: none;
     margin-right: 0;
     padding-right: 0;
   }
-
-  section.contact .card .card-body div+div {
+  section.contact .card .card-body div + div {
     padding-top: 10px;
   }
-
   section.contact .card {
     min-width: 100%;
     margin-bottom: 5vh;
   }
-
   section.contact .card .card-body {
     flex-direction: column;
   }
-
   section.contact .card a {
     font-size: 16px;
   }
-
   section.contact .card i {
     font-size: 20px;
     border-radius: 40px;
     min-width: 40px;
   }
-
   section .skill-box {
     max-width: 300px;
     margin: 20px auto;
   }
-
   section .intro-box,
   section .skill-box {
     padding: 20px 25px;
   }
-
   section.my-skill .skill-set {
     margin-left: 15px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
