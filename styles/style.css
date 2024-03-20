@@ -121,6 +121,11 @@ section .skill-box {
   border: 1px solid #FF74B1;
   margin: 20px auto;
   margin-bottom: 0;
+}
+section .intro-box {
+  width: 100%;
+}
+section .skill-box {
   width: 50%;
 }
 
@@ -418,6 +423,9 @@ section.contact .card i {
     height: 90%;
     max-width: 300px;
   }
+  section .skill-box {
+    width: 80%;
+  }
 }
 @media (max-width: 767px) {
   section.mini-project .mini-project-box img.mini-img {
@@ -479,6 +487,9 @@ section.contact .card i {
   section .skill-box {
     width: 100%;
   }
+  section .skill-box .skill-set {
+    width: 30%;
+  }
 }
 @media (max-width: 480px) {
   body h2 {
@@ -535,5 +546,6 @@ section.contact .card i {
   }
   section.my-skill .skill-set {
     margin-left: 15px;
+    width: 50%;
   }
 }/*# sourceMappingURL=style.css.map */

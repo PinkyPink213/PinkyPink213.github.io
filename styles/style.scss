@@ -179,6 +179,13 @@ section {
         border: 1px solid #FF74B1;
         margin: 20px auto;
         margin-bottom: 0;
+    }
+
+    .intro-box {
+        width: 100%;
+    }
+
+    .skill-box {
         width: 50%;
     }
 }
@@ -571,6 +578,10 @@ section.contact {
         max-width: 300px;
     }
 
+    section .skill-box {
+        width: 80%;
+    }
+
 
 }
 
@@ -665,6 +676,10 @@ section.contact {
 
     section .skill-box {
         width: 100%;
+
+        .skill-set {
+            width: 30%;
+        }
     }
 
 
@@ -754,7 +769,9 @@ section.contact {
 
     section.my-skill .skill-set {
         margin-left: 15px;
+        width: 50%;
     }
+
 
 
 
